@@ -16,13 +16,9 @@ This steps describe how you can install and test the application  on a linux box
 The application is also working on Windows, instructions left to the reader to adapt.
 
 
-    $ git clone https://github.com/node-opcua/node-opcua-htmlpanel
-    $ cd node-opcua-htmlpanel
+    $ git clone https://github.com/barisvelioglu/OpcUa-WebUI-Historic-RealTime.git
+    $ cd OpcUa-WebUI-Historic-RealTime-master
     $ npm i
-    $
-    $ # start server in background
-    $ node node_modules/node-opcua/bin/simple_server.js > /dev/null &
-    $
     $ # start the html server
     $ node app.js
     
