@@ -1,10 +1,6 @@
 HTML WEB UI to display a OPCUA monitored variable based on node, express, socket.io  and node-opcua
 
-
-![alt text](
 ![Image of Yaktocat](https://i.ibb.co/fDs4ZrF/Capture.png)
-
-
 
 #### how to install
 
