@@ -1,0 +1,9 @@
+{
+    "monitoring": [
+        "{\"value\":null,\"timestamp\":\"2020-08-07T09:15:36.938Z\",\"nodeId\":\"ns=2;s=MoldingArdiuno.Ardiuno.100001 - C1\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-07T09:15:46.006Z\",\"nodeId\":\"ns=2;s=MoldingArdiuno.Ardiuno.400001-R1\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-07T09:15:46.006Z\",\"nodeId\":\"ns=2;s=MoldingArdiuno.Ardiuno.400002-Register2\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-07T09:15:46.006Z\",\"nodeId\":\"ns=2;s=MoldingArdiuno.Ardiuno.400003 - Register 2\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-07T09:15:46.006Z\",\"nodeId\":\"ns=2;s=MoldingArdiuno.Ardiuno.400004 - Register 3\"}"
+    ]
+}

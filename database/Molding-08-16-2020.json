@@ -1,0 +1,6 @@
+{
+    "monitoring": [
+        "{\"value\":15,\"timestamp\":null,\"nodeId\":\"ns=2;s=MoldUPCUA.Mold.ARBURG.ClampingUnit.Mould.Closing.F101I.F101I-Value\"}",
+        "{\"value\":14,\"timestamp\":null,\"nodeId\":\"ns=2;s=MoldUPCUA.Mold.ARBURG.InjectionUnits.Unit1.Dosage-Deco-Cooling.t400.t400-Value\"}"
+    ]
+}

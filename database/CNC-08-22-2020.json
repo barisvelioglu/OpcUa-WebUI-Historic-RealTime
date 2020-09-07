@@ -1,0 +1,29 @@
+{
+    "monitoring": [
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310PressingForce2ndStep\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310WorkOrderNo\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310WorkOrderActive\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310TotalPartCounter\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310StopReason\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310ShiftChange\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310SafetyStatus\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310Product_Type\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310ProcessStatus\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310PressingForce1stStep\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310PartResult\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310PartPresent\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310OperatorLoggedInOut\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310OperatorID\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310NOKReason\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310MachineState\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310LifeBit\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310IIWAinNode4\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310GripperStatus\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310GoodPartCounter\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310ErrorFlag\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310EnergyConsumption\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310DoorIsOpen\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310CycleTime\"}",
+        "{\"value\":null,\"timestamp\":\"2020-08-22T15:36:55.252Z\",\"nodeId\":\"ns=2;s=St310.St310.310_000+S-K010.DataBlocksGlobal.OPC.St310BadPartCounter\"}"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "monitoring": [
+        "{\"value\":0,\"timestamp\":\"2020-07-13T12:32:56.208Z\",\"nodeId\":\"ns=2;s=OMRON_AGV_Tags.AGV_Controller.LD130TrolleyOrder\"}",
+        "{\"value\":6,\"timestamp\":\"2020-07-13T12:32:56.208Z\",\"nodeId\":\"ns=2;s=OMRON_AGV_Tags.AGV_Controller.LD130TrolleyStatus\"}",
+        "{\"value\":0,\"timestamp\":\"2020-07-13T12:32:56.223Z\",\"nodeId\":\"ns=2;s=OMRON_AGV_Tags.AGV_Controller.LD90ConveyorOrder\"}",
+        "{\"value\":84,\"timestamp\":\"2020-07-13T12:32:56.223Z\",\"nodeId\":\"ns=2;s=OMRON_AGV_Tags.AGV_Controller.LD90ConveyorStatus\"}",
+        "{\"value\":0,\"timestamp\":\"2020-07-13T12:32:56.223Z\",\"nodeId\":\"ns=2;s=OMRON_AGV_Tags.AGV_Controller.LD90JigOrder\"}",
+        "{\"value\":4,\"timestamp\":\"2020-07-13T12:32:56.239Z\",\"nodeId\":\"ns=2;s=OMRON_AGV_Tags.AGV_Controller.LD90JigStatus\"}",
+        "{\"value\":1,\"timestamp\":\"2020-07-13T12:32:56.286Z\",\"nodeId\":\"ns=2;s=OMRON_AGV_Tags.AGV_Controller.LD90Jig2Status\"}",
+        "{\"value\":0,\"timestamp\":\"2020-07-13T12:32:56.286Z\",\"nodeId\":\"ns=2;s=omron_nj.ct130.CmdOutputQuery_OutValue_60\"}",
+        "{\"value\":false,\"timestamp\":\"2020-07-13T12:32:56.286Z\",\"nodeId\":\"ns=2;s=omron_nj.ct130.CmdDropoff_Done_60\"}",
+        "{\"value\":false,\"timestamp\":\"2020-07-13T12:32:56.333Z\",\"nodeId\":\"ns=2;s=omron_nj.ct130.CmdPickup_Done_60\"}",
+        "{\"value\":false,\"timestamp\":\"2020-07-13T12:32:56.333Z\",\"nodeId\":\"ns=2;s=omron_nj.ct130.CmdQPickDrop_Done_60\"}",
+        "{\"value\":true,\"timestamp\":\"2020-07-13T12:32:56.333Z\",\"nodeId\":\"ns=2;s=omron_nj.ct130.CmdQPickDrop_Exe_60\"}",
+        "{\"value\":\"Disassembly_TrolleyDrop\",\"timestamp\":\"2020-07-13T12:32:56.348Z\",\"nodeId\":\"ns=2;s=omron_nj.ct130.CmdQPickDrop_Goal1_60\"}",
+        "{\"value\":\"TrolleyDrop\",\"timestamp\":\"2020-07-13T12:32:56.364Z\",\"nodeId\":\"ns=2;s=omron_nj.ct130.CmdQPickDrop_Goal2_60\"}",
+        "{\"value\":\"362\",\"timestamp\":\"2020-07-13T12:32:56.395Z\",\"nodeId\":\"ns=2;s=omron_nj.ct130.CmdQPickDrop_JobId_60\"}",
+        "{\"value\":null,\"timestamp\":\"2020-07-13T12:32:56.395Z\",\"nodeId\":\"ns=2;s=omron_nj.ct130.CmdQPickDrop_RobotName_60\"}",
+        "{\"value\":\"Job cancelled\",\"timestamp\":\"2020-07-13T12:32:56.395Z\",\"nodeId\":\"ns=2;s=omron_nj.ct130.CmdQPickDrop_Status_60\"}",
+        "{\"value\":\"undefined\",\"timestamp\":\"2020-07-13T12:32:56.395Z\",\"nodeId\":\"ns=2;s=omron_nj.ct130.job_dropoff_status_60\"}",
+        "{\"value\":\"undefined\",\"timestamp\":\"2020-07-13T12:32:56.431Z\",\"nodeId\":\"ns=2;s=omron_nj.ct130.job_pick_status_60\"}",
+        "{\"value\":\"SYSMAC_362\",\"timestamp\":\"2020-07-13T12:32:56.475Z\",\"nodeId\":\"ns=2;s=omron_nj.ct130.job_Sorgu_id_60\"}"
+    ]
+}

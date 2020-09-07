@@ -1,0 +1,20 @@
+{
+    "monitoring": [
+        "{\"value\":0,\"timestamp\":\"2020-08-10T11:23:21.822Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130PartResult\"}",
+        "{\"value\":false,\"timestamp\":\"2020-08-10T11:23:21.822Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130StartActivity\"}",
+        "{\"value\":false,\"timestamp\":\"2020-08-10T11:23:21.822Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130EndActivity\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-10T11:23:21.822Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130OrderNo\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-10T11:23:21.822Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130ProcessStatus\"}",
+        "{\"value\":false,\"timestamp\":\"2020-08-10T11:23:21.822Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130OrderActive\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-10T11:23:21.822Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130MachineState\"}",
+        "{\"value\":\"\",\"timestamp\":\"2020-08-10T11:23:21.822Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130PartIdentifier\"}",
+        "{\"value\":\"\",\"timestamp\":\"2020-08-10T11:23:21.822Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130ProcessName\"}",
+        "{\"value\":107,\"timestamp\":\"2020-08-10T11:23:21.822Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130TotalPartCounter\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-10T11:23:21.822Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130CycleTime\"}",
+        "{\"value\":19,\"timestamp\":\"2020-08-10T11:23:21.823Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130BadPartCounter\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-10T11:23:21.823Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130EnergyConsumption\"}",
+        "{\"value\":88,\"timestamp\":\"2020-08-10T11:23:21.823Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130GoodPartCounter\"}",
+        "{\"value\":true,\"timestamp\":\"2020-08-10T11:23:21.823Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130ErrorFlag\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-10T11:23:21.823Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130ErrorNumber\"}"
+    ]
+}

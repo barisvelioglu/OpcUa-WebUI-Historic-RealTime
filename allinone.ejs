@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>MEXT Live & Historic Telegram Viewer</title>
+
+    <!-- Favicons -->
+	<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+	<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+	<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+	<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+	<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+	<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#563d7c">
+
+	<style>
+        button, input,select, textarea {
+            border-radius:0px !important;
+        }
+        .collapsor {
+            position: absolute;
+            top:10px;
+            right:10px;
+            font-size:15px;
+            font-weight: bold;
+            padding:2px;
+            cursor:pointer;
+        }
+		.navbar-brand {
+			font-size:14px !important;
+			margin-right:0px !important;
+			padding:0 5px;
+		}
+
+		.navbar-brand:hover {
+			cursor:pointer;
+			color: #67a1d4 !important;
+		}		
+		.blink_me {
+			background: white;
+			animation: blinker 5s linear infinite;
+			padding: 5px;
+			font-weight: bold;
+			border-radius: 20px;
+		}
+
+		@keyframes blinker {
+		50% {
+			opacity: 0;
+		}
+		}
+		table > tbody > tr:nth-of-type(odd) {
+			background-color: #f8f8f8 ;
+		}
+	
+		body{
+			font-family: monospace;
+			font-size:12px !important;
+		}
+
+		input,select, button {
+			font-size:12px !important;
+		}
+	
+	
+		.dataValue {
+			font-weight:bold;
+			color:#cb3837;
+		}
+		
+		.nodeId {
+			font-weight:bold;
+			color: #294f6f;
+		}
+		
+		.dateValue {
+			font-weight:bold;
+			text-align: center;
+		}
+		
+		.counter
+		{
+			font-weight:bold;
+		}
+	
+		.mess-panel{
+			padding:10px;
+			background: #f8f8f8;
+			list-style: none;
+			margin:15px 5px;
+			border-radius:10px;
+		}
+	
+		.mess-panel h4{
+			padding:10px;
+			border-bottom: 3px solid #cb3837;
+		}
+	
+		.tab-header{
+			font-weight: bold;
+			background: #67a1d4;
+			color:#FFF;
+		}
+	
+		.tab-header td{
+			padding:10px;
+		}
+	
+		.tab-body{
+			height:500px;
+			overflow-y:scroll;
+		}
+	
+		table td 
+		{
+			padding:10px;
+		}
+	
+		.tab-filter input {
+			padding: 5px;
+			border:none;
+		}
+	
+		.filterValue 
+		{
+			width:60px;
+		}
+		
+	</style>
+	<link rel="stylesheet" href="/public/css/bootstrap.min.css" >
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<a class="navbar-brand" href="/">Live & Historic Telegram Viewer <span class="blink_me" style="color:red">LIVE</span></a>
+		<a class="navbar-brand" href="/" style="cursor: pointer;"> Home |</a>
+
+		<a class="navbar-brand" href="/lastvalues" style="cursor: pointer;">Last Values |</a>
+
+		<a class="navbar-brand" href="/allinone" style="cursor: pointer;">All In One Table </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			
+		  <form action="/history" method="get" class="form-inline my-2 my-lg-0">
+			<div class="form-group"  style="margin:0px 5px;">
+				<select name="station" id="logStation" class="browser-default custom-select">
+					<option value="">- Select Station -</option>
+					<%configs.forEach(function(conf) {%>
+					<option value="<%=conf.file.name%>"><%=conf.file.name%></option>
+					<%});%>
+			</select>
+			</div>
+			<div class="form-group"  style="margin:0px 5px;">
+				<input id='logDate' type="date" name="date" max="3000-12-31" min="2020-06-06" class="form-control">
+			</div>
+			<div class="form-group"  style="margin:0px 5px;">
+				<button class="btn btn-success my-2 my-sm-0" type="submit">GET LOG HISTORY</button>
+			</div>
+		  </form>
+		</div>
+	</nav>
+	<div class="container-fluid" style="margin-top:50px;">
+		<div class="row">
+	
+				<div class="col-md-12">
+					<div class="mess-panel list-group-item text-dark">
+						<h4>ALL STATIONS</h4>
+				
+						<table class="table" id="allinone">
+							<thead class="tab-header">
+								<tr>
+									<td></td>
+									<td>Station</td>
+									<td>NodeId</td>
+									<td>Value</td>
+									<td>DateTime</td>
+								</tr>
+								<tr class="tab-filter">
+									<td></td>
+									<td>
+										<input class="filterStation form-control" type="text" placeholder="Station" />
+									</td>
+									<td>
+										<input class="includeFilterNodeId form-control" style="margin-bottom:10px;" type="text" placeholder="Included NodeId" />
+										<input class="excludeFilterNodeId form-control" value="" type="text" placeholder="Excluded NodeIds (etc: CycleTime, WorkOrderActive)" />
+									</td>
+									<td>
+										<input  class="filterValue form-control" type="text"  placeholder="Value" />
+									</td>
+									<td>
+										<input  class="filterDateTime form-control" type="text"  placeholder="DateTime" />
+									</td>
+								</tr>
+							</thead>
+							<tbody class="tab-body">
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+		  </div>
+	</div>
+
+	<div id="field"></div>
+	<div id="content"></div>
+	<div id="info"></div>
+	<script src="javascript/jquery.min.js"></script>
+	<script src='/socket.io/socket.io.js'></script>
+	<script>
+
+		$(".filterStation").keyup(function(){
+			
+			var val = $(this).val();
+			if(val){
+				$(this).closest("table").find("tbody tr").hide();
+
+				$(this).closest("table").find("tbody tr").filter(function() {
+					return $(this).data("station").toString().indexOf(val) > -1
+				}).show()
+			}else{
+				$(this).closest("table").find("tbody tr").show();	
+			}
+		});
+
+		$(".excludeFilterNodeId").keyup(function(){
+			
+			$(this).closest("table").find("tbody tr").show();
+
+			var values = $(this).val().split(',')
+
+			if(values.length > 0)
+			{
+				var isEmpty = true;
+
+				for (let i = 0; i < values.length; i++) {
+					var val = values[i];
+
+					if(val){
+						isEmpty = false;
+						val = val.trim();
+				
+						$(this).closest("table").find("tbody tr").filter(function() {
+							return $(this).data("nodeid").toString().indexOf(val) > -1
+						}).hide()
+					}
+				}
+			}
+
+			if(isEmpty){
+				$(this).closest("table").find("tbody tr").show();	
+			}
+		});
+
+		$(".includeFilterNodeId").keyup(function(){
+	
+			var val = $(this).val();
+			if(val){
+				$(this).closest("table").find("tbody tr").hide();
+	
+				$(this).closest("table").find("tbody tr").filter(function() {
+					return $(this).data("nodeid").toString().indexOf(val) > -1
+				}).show()
+			}else{
+				$(this).closest("table").find("tbody tr").show();	
+			}
+		});
+	
+		$(".filterValue").keyup(function(){
+			var val = $(this).val();
+			if(val){
+				$(this).closest("table").find("tbody tr").hide();
+	
+				$(this).closest("table").find("tbody tr").filter(function() {
+					return $(this).data("value").toString().indexOf(val) > -1
+				}).show()
+			}else{
+				$(this).closest("table").find("tbody tr").show();	
+			}
+		});
+	
+		$(".filterDateTime").keyup(function(){
+			var val = $(this).val();
+			if(val){
+				$(this).closest("table").find("tbody tr").hide();
+	
+				$(this).closest("table").find("tbody tr").filter(function() {
+					return $(this).data("date").toString().indexOf(val) > -1
+				}).show()
+			}else{
+				$(this).closest("table").find("tbody tr").show();	
+			}
+		});
+	
+		const socket = io.connect('http://10.214.6.29:6161');
+		var counter = 1;
+
+		<%configs.forEach(function(conf) {%>
+	
+			(function connect(){
+		
+				socket.on("<%- conf.file.name %>", function (data) {
+	
+					if(counter > 2000){
+						$( "#allinone tbody tr" ).last().remove();
+					}
+	
+					var $relatedTable = $("#allinone");
+					var nodeId = data.nodeId.substring(7);
+	
+					var hide = false;
+
+					if($relatedTable.find(".filterStation").val() && nodeId.indexOf($relatedTable.find(".filterStation").val()) == -1){
+						hide = true;
+					}
+					
+					if($relatedTable.find(".excludeFilterNodeId").val()){
+						
+						var values = $relatedTable.find(".excludeFilterNodeId").val().split(',');
+						
+						for (let x = 0; x < values.length; x++) {
+							const val = values[x];
+
+							if(nodeId.indexOf(val) > -1)
+								hide = true;
+						}
+					}
+
+					if($relatedTable.find(".includeFilterNodeId").val() && nodeId.indexOf($relatedTable.find(".includeFilterNodeId").val()) == -1){
+						hide = true;
+					}
+	
+					if($relatedTable.find(".filterValue").val() && data.value.toString().indexOf($relatedTable.find(".filterValue").val()) == -1){
+						hide = true;
+					}
+	
+					if($relatedTable.find(".filterDateTime").val() && data.timestamp.toString().indexOf($relatedTable.find(".filterDateTime").val()) == -1){
+						hide = true;
+					}
+	
+					if(hide){
+						var $el = $("<tr data-nodeid='"+nodeId+"' data-value='"+data.value+"' data-station='<%- conf.file.name %>' data-date='"+data.timestamp+"'><td><span class='counter'>"+(counter++)+" </span></td><td><%- conf.file.name %></td><td><span class='nodeId'>"+data.nodeId.substring(7)+"</span></td><td><span class='dataValue'>"+data.value+"</span></td><td><span class='dateValue'>"+data.timestamp.replace('T', '  ').replace('Z', '').split('  ')[0] + '  <b>' + data.timestamp.replace('T', '  ').replace('Z', '').split('  ')[1]+"</b></span></td></tr>");
+						$( "#allinone" ).prepend($el.hide());
+					}else{
+						$( "#allinone" ).prepend("<tr data-nodeid='"+nodeId+"' data-station='<%- conf.file.name %>' data-value='"+data.value+"' data-date='"+data.timestamp+"'><td><span class='counter'>"+(counter++)+" </span></td><td><%- conf.file.name %></td><td><span class='nodeId'>"+data.nodeId.substring(7)+"</span></td><td><span class='dataValue'>"+data.value+"</span></td><td><span class='dateValue'>"+data.timestamp.replace('T', '  ').replace('Z', '').split('  ')[0] + '  <b>' + data.timestamp.replace('T', '  ').replace('Z', '').split('  ')[1]+"</b></span></td></tr>");
+					}
+					
+	
+				});
+			}());
+	
+		<%});%>
+	
+	</script>
+</body>

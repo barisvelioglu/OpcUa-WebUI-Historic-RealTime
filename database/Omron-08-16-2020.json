@@ -1,0 +1,6 @@
+{
+    "monitoring": [
+        "{\"value\":15,\"timestamp\":null,\"nodeId\":\"ns=2;s=omron_nj.ct130.CmdDropoff_Done_60\"}",
+        "{\"value\":14,\"timestamp\":null,\"nodeId\":\"ns=2;s=omron_nj.ct130.CmdOutputQuery_OutValue_60\"}"
+    ]
+}

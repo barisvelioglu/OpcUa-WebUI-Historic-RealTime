@@ -1,0 +1,31 @@
+{
+    "monitoring": [
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.496Z\",\"nodeId\":\"ns=2;s=St200.St200.ST200AmountOfPlastic\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.507Z\",\"nodeId\":\"ns=2;s=St200.St200.St200BadPartCounter\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.507Z\",\"nodeId\":\"ns=2;s=St200.St200.St200ChillingDuration\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.517Z\",\"nodeId\":\"ns=2;s=St200.St200.St200CycleTime\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.517Z\",\"nodeId\":\"ns=2;s=St200.St200.St200EnergyConsumption\"}",
+        "{\"value\":\"String 651\",\"timestamp\":\"2020-08-07T09:15:29.517Z\",\"nodeId\":\"ns=2;s=St200.St200.St200ErrorDescription\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.527Z\",\"nodeId\":\"ns=2;s=St200.St200.St200ErrorFlag\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.559Z\",\"nodeId\":\"ns=2;s=St200.St200.St200GoodPartCounter\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.538Z\",\"nodeId\":\"ns=2;s=St200.St200.St200ErrorNumber\"}",
+        "{\"value\":\"String 650\",\"timestamp\":\"2020-08-07T09:15:29.569Z\",\"nodeId\":\"ns=2;s=St200.St200.St200MachineID\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.579Z\",\"nodeId\":\"ns=2;s=St200.St200.St200MachineStatus\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.589Z\",\"nodeId\":\"ns=2;s=St200.St200.St200OperatorID\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.589Z\",\"nodeId\":\"ns=2;s=St200.St200.St200OperatorLoggedInOut\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.589Z\",\"nodeId\":\"ns=2;s=St200.St200.St200OrderNo\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.600Z\",\"nodeId\":\"ns=2;s=St200.St200.St200OrderQuantity\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.610Z\",\"nodeId\":\"ns=2;s=St200.St200.St200OrderStatus\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.620Z\",\"nodeId\":\"ns=2;s=St200.St200.St200PartQuantity\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.620Z\",\"nodeId\":\"ns=2;s=St200.St200.St200PartResult\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.620Z\",\"nodeId\":\"ns=2;s=St200.St200.ST200PressCount\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.620Z\",\"nodeId\":\"ns=2;s=St200.St200.ST200ProcessPause\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.631Z\",\"nodeId\":\"ns=2;s=St200.St200.ST200ProducedParts\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.631Z\",\"nodeId\":\"ns=2;s=St200.St200.St200ProgramNumber\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.631Z\",\"nodeId\":\"ns=2;s=St200.St200.St200SafetyStatus\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.631Z\",\"nodeId\":\"ns=2;s=St200.St200.St200StopReason\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-07T09:15:29.631Z\",\"nodeId\":\"ns=2;s=St200.St200.St200TotalPartCounter\"}",
+        "{\"value\":false,\"timestamp\":\"2020-08-07T09:15:29.631Z\",\"nodeId\":\"ns=2;s=St200.St200.St200WorkOrderActive\"}",
+        "{\"value\":66,\"timestamp\":\"2020-08-07T09:15:29.631Z\",\"nodeId\":\"ns=2;s=St200.St200.ST210MoldingOrder\"}"
+    ]
+}

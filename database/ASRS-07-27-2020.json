@@ -1,0 +1,17 @@
+{
+    "monitoring": [
+        "{\"value\":false,\"timestamp\":\"2020-07-27T14:30:18.668Z\",\"nodeId\":\"ns=3;s=\\\"7_DB_WMS\\\".\\\"OperatorluCalisma\\\"\"}",
+        "{\"value\":0,\"timestamp\":\"2020-07-27T14:30:18.668Z\",\"nodeId\":\"ns=3;s=\\\"7_DB_WMS\\\".\\\"RCVData\\\".\\\"Telegram\\\"\"}",
+        "{\"value\":\"\",\"timestamp\":\"2020-07-27T14:30:18.669Z\",\"nodeId\":\"ns=3;s=\\\"7_DB_WMS\\\".\\\"RCVData\\\".\\\"PartiNo\\\"\"}",
+        "{\"value\":\"\",\"timestamp\":\"2020-07-27T14:30:18.669Z\",\"nodeId\":\"ns=3;s=\\\"7_DB_WMS\\\".\\\"RCVData\\\".\\\"TasmaKontrol\\\"\"}",
+        "{\"value\":\"\",\"timestamp\":\"2020-07-27T14:30:18.670Z\",\"nodeId\":\"ns=3;s=\\\"7_DB_WMS\\\".\\\"RCVData\\\".\\\"Agirlik\\\"\"}",
+        "{\"value\":\"\",\"timestamp\":\"2020-07-27T14:30:18.670Z\",\"nodeId\":\"ns=3;s=\\\"7_DB_WMS\\\".\\\"RCVData\\\".\\\"BufferGrup\\\"\"}",
+        "{\"value\":0,\"timestamp\":\"2020-07-27T14:30:18.671Z\",\"nodeId\":\"ns=3;s=\\\"7_DB_WMS\\\".\\\"RCVData\\\".\\\"MalzemeMiktar\\\"\"}",
+        "{\"value\":\"\",\"timestamp\":\"2020-07-27T14:30:18.671Z\",\"nodeId\":\"ns=3;s=\\\"7_DB_WMS\\\".\\\"RCVData\\\".\\\"KutuNo\\\"\"}",
+        "{\"value\":\"\",\"timestamp\":\"2020-07-27T14:30:18.672Z\",\"nodeId\":\"ns=3;s=\\\"7_DB_WMS\\\".\\\"SNDData\\\".\\\"KutuNo\\\"\"}",
+        "{\"value\":\"\",\"timestamp\":\"2020-07-27T14:30:18.672Z\",\"nodeId\":\"ns=3;s=\\\"7_DB_WMS\\\".\\\"SNDData\\\".\\\"MalzemeKodu\\\"\"}",
+        "{\"value\":0,\"timestamp\":\"2020-07-27T14:30:18.672Z\",\"nodeId\":\"ns=3;s=\\\"7_DB_WMS\\\".\\\"SNDData\\\".\\\"MalzemeMiktar\\\"\"}",
+        "{\"value\":\"\",\"timestamp\":\"2020-07-27T14:30:18.673Z\",\"nodeId\":\"ns=3;s=\\\"7_DB_WMS\\\".\\\"SNDData\\\".\\\"BufferGrup\\\"\"}",
+        "{\"value\":\"\",\"timestamp\":\"2020-07-27T14:30:18.674Z\",\"nodeId\":\"ns=3;s=\\\"7_DB_WMS\\\".\\\"SNDData\\\".\\\"PartiNo\\\"\"}"
+    ]
+}

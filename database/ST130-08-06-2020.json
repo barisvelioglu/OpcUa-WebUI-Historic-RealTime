@@ -1,0 +1,27 @@
+{
+    "monitoring": [
+        "{\"value\":0,\"timestamp\":\"2020-08-06T13:26:48.781Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130PartResult\"}",
+        "{\"value\":false,\"timestamp\":\"2020-08-06T13:26:48.882Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130StartActivity\"}",
+        "{\"value\":false,\"timestamp\":\"2020-08-06T13:26:48.882Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130EndActivity\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-06T13:26:48.882Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130OrderNo\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-06T13:26:48.882Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130ProcessStatus\"}",
+        "{\"value\":false,\"timestamp\":\"2020-08-06T13:26:48.883Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130OrderActive\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-06T13:26:48.883Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130MachineState\"}",
+        "{\"value\":\"\",\"timestamp\":\"2020-08-06T13:26:48.883Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130PartIdentifier\"}",
+        "{\"value\":\"\",\"timestamp\":\"2020-08-06T13:26:48.883Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130ProcessName\"}",
+        "{\"value\":107,\"timestamp\":\"2020-08-06T13:26:48.883Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130TotalPartCounter\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-06T13:26:48.883Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130CycleTime\"}",
+        "{\"value\":19,\"timestamp\":\"2020-08-06T13:26:48.883Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130BadPartCounter\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-06T13:26:48.883Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130EnergyConsumption\"}",
+        "{\"value\":88,\"timestamp\":\"2020-08-06T13:26:48.984Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130GoodPartCounter\"}",
+        "{\"value\":false,\"timestamp\":\"2020-08-06T13:26:48.984Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130ErrorFlag\"}",
+        "{\"value\":0,\"timestamp\":\"2020-08-06T13:26:48.984Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130ErrorNumber\"}",
+        "{\"value\":1,\"timestamp\":\"2020-08-06T13:28:11.843Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130MachineState\"}",
+        "{\"value\":2,\"timestamp\":\"2020-08-06T13:30:42.550Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130MachineState\"}",
+        "{\"value\":1,\"timestamp\":\"2020-08-06T13:30:43.151Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130MachineState\"}",
+        "{\"value\":2,\"timestamp\":\"2020-08-06T13:30:47.901Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130MachineState\"}",
+        "{\"value\":true,\"timestamp\":\"2020-08-06T13:30:53.953Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130StartActivity\"}",
+        "{\"value\":false,\"timestamp\":\"2020-08-06T13:30:57.886Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130StartActivity\"}",
+        "{\"value\":1,\"timestamp\":\"2020-08-06T13:30:57.888Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130MachineState\"}"
+    ]
+}

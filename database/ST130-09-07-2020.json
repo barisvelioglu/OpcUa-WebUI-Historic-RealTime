@@ -1,0 +1,6 @@
+{
+    "monitoring": [
+        "{\"value\":1,\"timestamp\":\"2020-09-07T06:33:47.269Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130ProcessStatus\"}",
+        "{\"value\":0,\"timestamp\":\"2020-09-07T06:34:10.604Z\",\"nodeId\":\"ns=2;s=Application.ST130.ST130ProcessStatus\"}"
+    ]
+}
