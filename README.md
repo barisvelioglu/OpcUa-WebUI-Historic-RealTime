@@ -10,7 +10,8 @@ HTML WEB UI to display a OPCUA monitored variable based on node, express, socket
 
 ##### prerequiste 
 
-*  git
+* git
+* nodejs
 
 
 ##### step by step install 
@@ -29,7 +30,7 @@ The application is also working on Windows, instructions left to the reader to a
     $ # start the html server
     $ node app.js
     
-Now visit  ````http://localhost:3700' on your web browser
+Now visit  ````http://localhost:6161' on your web browser
     
     
         
