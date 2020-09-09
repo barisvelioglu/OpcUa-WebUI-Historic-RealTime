@@ -221,7 +221,9 @@
 	<script src="javascript/jquery.min.js"></script>
 	<script src='/socket.io/socket.io.js'></script>
 	<script>
-			
+        $('.collapsor').click(function(){
+            $(this).parent(".mess-panel").find('.table').fadeToggle();
+        });
 		$(".excludeFilterNodeId").keyup(function(){
 			$(this).closest("table").find("tbody tr").show();
 
