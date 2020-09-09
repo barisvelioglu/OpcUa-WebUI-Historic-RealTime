@@ -114,7 +114,7 @@ setInterval(function(){
 				let config = configs[x];
 
 				config.client = OPCUAClient.create({
-					endpoint_must_exist: false
+					endpoint_must_exist: false,
 				});
 		
 				config.client.on("backoff", (retry, delay) => {
@@ -125,7 +125,12 @@ setInterval(function(){
 				await config.client.connect(config.file.endpointUrl);
 				console.log(" connected to ", chalk.cyan(config.file.endpointUrl));
 		
-				config.session = await config.client.createSession();
+				if(config.file.userIdentity){
+					config.session = await config.client.createSession(config.file.userIdentity );	
+				}else{
+					config.session = await config.client.createSession();	
+				}
+
 				console.log(" session created".yellow);
 		
 				config.subscription = await config.session.createSubscription2({
