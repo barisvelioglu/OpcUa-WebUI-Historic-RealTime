@@ -50,5 +50,9 @@ module.exports = {
 		
 		"ns=2;s=St200.St200.St200SafetyStatus","ns=2;s=St200.St200.St200StopReason","ns=2;s=St200.St200.St200TotalPartCounter","ns=2;s=St200.St200.St200WorkOrderActive","ns=2;s=St200.St200.ST210MoldingOrder",
 		
-    ]
+    ],
+	userIdentity : {
+		userName: "Administrator",
+		password: "password"
+	}
 };
