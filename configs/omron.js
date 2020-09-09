@@ -23,5 +23,9 @@ module.exports = {
 		"ns=2;s=omron_nj.ct130.job_dropoff_status_60",
 		"ns=2;s=omron_nj.ct130.job_pick_status_60",
 		"ns=2;s=omron_nj.ct130.job_Sorgu_id_60",
-    ] 
+    ] ,
+	userIdentity : {
+		userName: "Administrator",
+		password: "password"
+	}
 };
