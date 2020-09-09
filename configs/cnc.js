@@ -1,6 +1,7 @@
 module.exports = {
     name : "CNC",
     endpointUrl : "opc.tcp://10.214.6.29:49320",
+	
     tags : [
 	
 	 
@@ -191,5 +192,9 @@ module.exports = {
 		"ns=2;s=DMG.Device1.Alarm Sebebi ile Program Durduruldu",
 		"ns=2;s=DMG.Device1.Alarm Durumu",		
 
-    ] 
+    ] ,
+	userIdentity : {
+		userName: "Administrator",
+		password: "password"
+	}
 };
